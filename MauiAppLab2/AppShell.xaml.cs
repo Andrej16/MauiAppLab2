@@ -1,10 +1,15 @@
-﻿namespace MauiAppLab2
+﻿using System.Windows.Input;
+
+namespace MauiAppLab2
 {
     public partial class AppShell : Shell
     {
+        public Dictionary<string, Type> Routes { get; private set; } = new Dictionary<string, Type>();
+
         public AppShell()
         {
-            InitializeComponent();
+            InitializeComponent(); 
+            BindingContext = this;
         }
     }
 }
