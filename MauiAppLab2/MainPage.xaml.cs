@@ -14,9 +14,9 @@
             count += 5;
 
             if (count == 1)
-                CounterBtn.Text = $"Wow you clicked {count} time";
+                CounterBtn.Text = $"Clicked {count} time";
             else
-                CounterBtn.Text = $"Wow wow stop please, since you clicked {count} times";
+                CounterBtn.Text = $"Clicked {count} times";
 
             SemanticScreenReader.Announce(CounterBtn.Text);
         }

@@ -78,11 +78,6 @@ public partial class PhoneWordTranslatorPage : ContentPage
         return newNumber.ToString();
     }
 
-    static bool Contains(string keyString, char c)
-    {
-        return keyString.IndexOf(c) >= 0;
-    }
-
     static readonly string[] digits = {
         "ABC", "DEF", "GHI", "JKL", "MNO", "PQRS", "TUV", "WXYZ"
     };
