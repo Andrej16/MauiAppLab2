@@ -49,21 +49,27 @@
         FlyoutDisplayOptions="AsMultipleItems">
         <ShellContent
             Title="Home"
-                        Style="{StaticResource AboutShell}"
+            Style="{StaticResource AboutShell}"
             ContentTemplate="{DataTemplate local:MainPage}"
             Route="MainPage" />
 
         <ShellContent
             Title="Translator"
-                        Style="{StaticResource AboutShell}"
+            Style="{StaticResource AboutShell}"
             ContentTemplate="{DataTemplate views:PhoneWordTranslatorPage}"
             Route="translator" />
 
         <ShellContent 
-            Route="about"
+            Route="About"
             Style="{StaticResource AboutShell}"
             Title="About"
             Icon="info.png"
             ContentTemplate="{DataTemplate views:AboutPage}" />
+
+        <ShellContent
+            Route="device-information"
+            Style="{StaticResource DomesticShell}"
+            Title="Device information"
+            ContentTemplate="{DataTemplate views:DeviceInformationPage}" />
     </FlyoutItem>
 </Shell>
